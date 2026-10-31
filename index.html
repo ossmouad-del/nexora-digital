@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nexora Digital - Premium digital services, websites, branding and AI solutions.">
+    <meta name="theme-color" content="#080914">
+    <title>NEXORA DIGITAL | Build Your Digital Future</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background-glow"></div>
+
+<header class="header">
+    <a href="#" class="logo">NEXORA<span>.</span></a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+
+    <nav class="nav" id="nav">
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#services" data-i18n="navServices">Services</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#pricing" data-i18n="navPricing">Pricing</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+    </nav>
+
+    <select id="languageSwitcher" class="language-switcher" aria-label="Choose language">
+        <option value="en">EN</option>
+        <option value="fr">FR</option>
+        <option value="ar">AR</option>
+    </select>
+</header>
+
+<main>
+<section class="hero" id="home">
+    <div class="hero-content">
+        <div class="eyebrow">
+            <span class="status-dot"></span>
+            <span data-i18n="heroBadge">YOUR DIGITAL PARTNER</span>
+        </div>
+
+        <h1 data-i18n="heroTitle">
+            Build Your <span>Digital Future.</span>
+        </h1>
+
+        <p data-i18n="heroText">
+            We transform ideas into powerful digital experiences.
+            Websites, branding, AI solutions and more.
+        </p>
+
+        <div class="hero-actions">
+            <a href="#services" class="btn btn-primary" data-i18n="exploreBtn">Explore Services ↗</a>
+            <a href="#contact" class="btn btn-outline" data-i18n="contactBtn">Let's Talk</a>
+        </div>
+
+        <div class="hero-stats">
+            <div><strong>12+</strong><small data-i18n="statServices">Digital Services</small></div>
+            <div><strong>100%</strong><small data-i18n="statCommitment">Commitment</small></div>
+            <div><strong>24/7</strong><small data-i18n="statSupport">Online Support</small></div>
+        </div>
+    </div>
+
+    <div class="hero-visual">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="visual-card">
+            <div class="visual-icon">✦</div>
+            <h3>NEXORA</h3>
+            <p>Ideas. Design. Technology.</p>
+            <div class="visual-line"></div>
+            <div class="visual-bottom">
+                <span>CREATIVE STUDIO</span>
+                <span>2026</span>
+            </div>
+        </div>
+        <div class="floating-tag tag-one">✧ Creative</div>
+        <div class="floating-tag tag-two">⌘ Digital</div>
+    </div>
+</section>
+
+<section class="trust-strip">
+    <span data-i18n="trustText">CREATIVE SOLUTIONS FOR YOUR NEXT BIG IDEA</span>
+</section>
+
+<section class="section" id="services">
+    <div class="section-heading">
+        <span class="section-label" data-i18n="servicesLabel">WHAT WE DO</span>
+        <h2 data-i18n="servicesTitle">Services That Move You Forward</h2>
+        <p data-i18n="servicesText">Everything you need to build your online presence.</p>
+    </div>
+
+    <div class="filters">
+        <button class="filter active" data-filter="all" data-i18n="filterAll">All</button>
+        <button class="filter" data-filter="design" data-i18n="filterDesign">Design</button>
+        <button class="filter" data-filter="web" data-i18n="filterWeb">Web</button>
+        <button class="filter" data-filter="tech" data-i18n="filterTech">Technology</button>
+    </div>
+
+    <div class="services-grid">
+        <article class="service-card" data-category="design">
+            <div class="service-icon">✦</div>
+            <h3>Professional CV</h3>
+            <p>Create a modern CV that makes your profile stand out.</p>
+            <div class="service-footer"><strong>From 50 DH</strong><button onclick="order('Professional CV')">Order ↗</button></div>
+        </article>
+
+        <article class="service-card" data-category="design">
+            <div class="service-icon">◈</div>
+            <h3>Logo Design</h3>
+            <p>A unique visual identity for your brand or business.</p>
+            <div class="service-footer"><strong>From 80 DH</strong><button onclick="order('Logo Design')">Order ↗</button></div>
+        </article>
+
+        <article class="service-card" data-category="design">
+            <div class="service-icon">▧</div>
+            <h3>Social Media Design</h3>
+            <p>Creative posts and visuals for your social platforms.</p>
+            <div class="service-footer"><strong>From 30 DH</strong><button onclick="order('Social Media Design')">Order ↗</button></div>
+        </article>
+
+        <article class="service-card" data-category="web">
+            <div class="service-icon">⌘</div>
+            <h3>Landing Page</h3>
+            <p>A beautiful landing page designed to convert visitors.</p>
+            <div class="service-footer"><strong>From 200 DH</strong><button onclick="order('Landing Page')">Order ↗</button></div>
+        </article>
+
+        <article class="service-card" data-category="web">
+            <div class="service-icon">▣</div>
+            <h3>Business Website</h3>
+            <p>Present your company with a professional website.</p>
+            <div class="service-footer"><strong>From 500 DH</strong><button onclick="order('Business Website')">Order ↗</button></div>
+        </article>
+
+        <article class="service-card" data-category="web">
+            <div class="service-icon">▤</div>
+            <h3>E-commerce Store</h3>
+            <p>Launch your online store and showcase your products.</p>
+            <div class="service-footer"><strong>From 900 DH</strong><button onclick="order('E-commerce Store')">Order ↗</button></div>
+        </article>
+
+        <article class="service-card" data-category="tech">
+            <div class="service-icon">▱</div>
+            <h3>Android App</h3>
+            <p>A simple custom Android application for your idea.</p>
+            <div class="service-footer"><strong>From 700 DH</strong><button onclick="order('Android App')">Order ↗</button></div>
+        </article>
+
+        <article class="service-card" data-category="tech">
+            <div class="service-icon">✧</div>
+            <h3>AI Chatbot</h3>
+            <p>Smart chatbot solutions for your website or business.</p>
+            <div class="service-footer"><strong>From 250 DH</strong><button onclick="order('AI Chatbot')">Order ↗</button></div>
+        </article>
+
+        <article class="service-card" data-category="web">
+            <div class="service-icon">◎</div>
+            <h3>Personal Portfolio</h3>
+            <p>Showcase your skills, projects and achievements.</p>
+            <div class="service-footer"><strong>From 150 DH</strong><button onclick="order('Personal Portfolio')">Order ↗</button></div>
+        </article>
+
+        <article class="service-card" data-category="tech">
+            <div class="service-icon">⚙</div>
+            <h3>Website Fixes</h3>
+            <p>Fix bugs and improve your existing website.</p>
+            <div class="service-footer"><strong>From 50 DH</strong><button onclick="order('Website Fixes')">Order ↗</button></div>
+        </article>
+
+        <article class="service-card" data-category="tech">
+            <div class="service-icon">⌁</div>
+            <h3>AI Website Setup</h3>
+            <p>Build and configure a website using AI tools.</p>
+            <div class="service-footer"><strong>From 150 DH</strong><button onclick="order('AI Website Setup')">Order ↗</button></div>
+        </article>
+
+        <article class="service-card" data-category="web">
+            <div class="service-icon">◇</div>
+            <h3>GitHub Portfolio</h3>
+            <p>Set up and publish your developer portfolio.</p>
+            <div class="service-footer"><strong>From 100 DH</strong><button onclick="order('GitHub Portfolio')">Order ↗</button></div>
+        </article>
+    </div>
+</section>
+
+<section class="section about-section" id="about">
+    <div class="about-visual">
+        <div class="about-symbol">N<span>.</span></div>
+        <div class="about-caption">THINK DIFFERENT. BUILD BETTER.</div>
+    </div>
+    <div class="about-content">
+        <span class="section-label" data-i18n="aboutLabel">ABOUT NEXORA</span>
+        <h2 data-i18n="aboutTitle">Technology Meets Creativity.</h2>
+        <p data-i18n="aboutText">
+            NEXORA DIGITAL is a creative digital studio focused on helping
+            individuals and businesses grow through modern design and technology.
+        </p>
+        <ul>
+            <li data-i18n="aboutPoint1">✓ Modern and creative solutions</li>
+            <li data-i18n="aboutPoint2">✓ Affordable and transparent pricing</li>
+            <li data-i18n="aboutPoint3">✓ Personal support for every project</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section pricing-section" id="pricing">
+    <div class="section-heading">
+        <span class="section-label" data-i18n="pricingLabel">SIMPLE PRICING</span>
+        <h2 data-i18n="pricingTitle">Choose Your Package</h2>
+        <p data-i18n="pricingText">Flexible packages for different needs.</p>
+    </div>
+
+    <div class="pricing-grid">
+        <article class="price-card">
+            <span class="plan-name">STARTER</span>
+            <h3>100 <small>DH</small></h3>
+            <p>For small projects and personal needs.</p>
+            <ul><li>One basic service</li><li>Simple customization</li><li>Standard support</li></ul>
+            <button onclick="order('Starter Package')">Choose Starter ↗</button>
+        </article>
+
+        <article class="price-card featured">
+            <span class="popular">MOST POPULAR</span>
+            <span class="plan-name">PERSONAL</span>
+            <h3>180 <small>DH</small></h3>
+            <p>For creators and growing projects.</p>
+            <ul><li>Up to two selected services</li><li>Custom design</li><li>Priority support</li></ul>
+            <button onclick="order('Personal Package')">Choose Personal ↗</button>
+        </article>
+
+        <article class="price-card">
+            <span class="plan-name">BUSINESS</span>
+            <h3>600 <small>DH</small></h3>
+            <p>For businesses ready to grow.</p>
+            <ul><li>Custom project quote</li><li>Professional design</li><li>Dedicated assistance</li></ul>
+            <button onclick="order('Business Package')">Choose Business ↗</button>
+        </article>
+    </div>
+    <p class="price-note">* Final prices depend on project requirements.</p>
+</section>
+
+<section class="section faq-section">
+    <div class="section-heading">
+        <span class="section-label">FAQ</span>
+        <h2 data-i18n="faqTitle">Frequently Asked Questions</h2>
+    </div>
+
+    <details>
+        <summary>How can I order a service?</summary>
+        <p>Choose a service and click Order. You will be redirected to WhatsApp.</p>
+    </details>
+    <details>
+        <summary>Can I request a custom project?</summary>
+        <p>Yes. Contact us and explain your idea to receive a custom quote.</p>
+    </details>
+    <details>
+        <summary>Are subscription services included?</summary>
+        <p>We can help with guidance and official subscription options. We do not sell stolen or unauthorized accounts.</p>
+    </details>
+</section>
+
+<section class="contact-section" id="contact">
+    <span class="section-label">LET'S WORK TOGETHER</span>
+    <h2 data-i18n="contactTitle">Have a Project in Mind?</h2>
+    <p data-i18n="contactText">Let's turn your idea into something extraordinary.</p>
+    <button class="btn btn-primary" onclick="contactUs()" data-i18n="contactAction">Contact Us on WhatsApp ↗</button>
+</section>
+</main>
+
+<footer class="footer">
+    <a href="#" class="logo">NEXORA<span>.</span></a>
+    <p>© 2026 NEXORA DIGITAL. All rights reserved.</p>
+    <a href="#home">Back to top ↑</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
